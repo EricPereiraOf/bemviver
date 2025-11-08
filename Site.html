@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Bem Viver Oficial</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: url('https://i.postimg.cc/9X1hFrWT/Gemini-Generated-Image-2bjroa2bjroa2bjr.png') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 50px 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 50px;
+        }
+
+        /* Grid de produtos */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .product {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+        }
+
+        .main-product {
+            grid-column: span 2;
+            background-color: rgba(255, 215, 0, 0.2);
+            border: 2px solid gold;
+        }
+
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .product .price {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .product button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            background-color: #ff6b6b;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #ff3b3b;
+        }
+
+        /* Informações detalhadas dos produtos */
+        .product-info {
+            background-color: rgba(0,0,0,0.6);
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+
+        .product-info h2 {
+            margin-bottom: 20px;
+        }
+
+        .product-info p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        /* Contato */
+        .contact {
+            background-color: rgba(0,0,0,0.6);
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-top: 50px;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact input, 
+        .contact textarea {
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 1em;
+        }
+
+        .contact button {
+            padding: 15px;
+            border-radius: 10px;
+            border: none;
+            background-color: #ff6b6b;
+            color: white;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #ff3b3b;
+        }
+
+        @media(max-width: 768px){
+            .main-product {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Minha Loja de Ebooks</h1>
+
+        <!-- Área de Produtos -->
+        <div class="products">
+            <!-- Produto Principal -->
+            <div class="product main-product">
+                <img src="https://i.postimg.cc/wjR8V2DN/Gemini-Generated-Image-2dw89k2dw89k2dw8.png" alt="Pacote Completo de Ebooks">
+                <h2>Pacote Completo de Ebooks</h2>
+                <p class="price">R$49,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/4943qzh';">Comprar Agora</button>
+            </div>
+
+            <!-- Produtos Individuais -->
+            <div class="product">
+                <img src="https://i.postimg.cc/BvxWWvYC/Gemini-Generated-Image-2w10yi2w10yi2w10.png" alt="Alimento Saudavel">
+                <h2>Alimento Saudavel</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/mbVmaUR';">Comprar Agora</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.postimg.cc/wjR8V2DN/Gemini-Generated-Image-2dw89k2dw89k2dw8.png" alt="Bem-estar feminino">
+                <h2>Bem-estar feminino</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/nOhholR';">Comprar Agora</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.postimg.cc/vZVk9Bd6/Gemini-Generated-Image-r6o23kr6o23kr6o2.png" alt="Estilo de vida saudável e minimalista">
+                <h2>Estilo de vida saudável e minimalista</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/eODiYxy';">Comprar Agora</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.postimg.cc/GpnNjCL8/Gemini-Generated-Image-1l7rjl1l7rjl1l7r.png" alt="Fitness e performance">
+                <h2>Fitness e performance</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/Yz8SXdc';">Comprar Agora</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.postimg.cc/JnP2mHbL/Gemini-Generated-Image-k4jtzak4jtzak4jt.png" alt="Longevidade e saúde preventiva">
+                <h2>Longevidade e saúde preventiva</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/7LADysl';">Comprar Agora</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.postimg.cc/jq3FFNxM/Gemini-Generated-Image-3kn5jm3kn5jm3kn5.png" alt="Nutrição para públicos específicos">
+                <h2>Nutrição para públicos específicos</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/8gDvM7e';">Comprar Agora</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.postimg.cc/DytY2TbX/Gemini-Generated-Image-xlee36xlee36xlee.png" alt="Saúde mental e emocional">
+                <h2>Saúde mental e emocional</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/pb30zMU';">Comprar Agora</button>
+            </div>
+
+            <div class="product">
+                <img src="https://i.postimg.cc/zBXxdD98/Gemini-Generated-Image-31lrz131lrz131lr.png" alt="Saúde natural e terapias">
+                <h2>Saúde natural e terapias</h2>
+                <p class="price">R$9,90</p>
+                <button onclick="window.location.href='https://pay.kiwify.com.br/A8xLgy6';">Comprar Agora</button>
+            </div>
+        </div>
+
+        <!-- Informações detalhadas dos produtos -->
+        <div class="product-info">
+            <h2>Informações dos Produtos</h2>
+            <p><strong>Pacote Completo de Ebooks:</strong> Tenha acesso imediato a diversos ebooks com conteúdos educativos, práticos e inspiradores para transformar seu conhecimento e seu dia a dia!</p>
+            <p><strong>Alimento Saudavel:</strong> Descubra receitas, dicas e hábitos que ajudam você a se alimentar melhor, de forma nutritiva e saborosa, cuidando do seu corpo e da sua saúde!</p>
+            <p><strong>Bem-estar feminino:</strong> Dicas e práticas para cuidar do corpo, mente e emocional, promovendo equilíbrio, autoestima e uma vida mais saudável para mulheres!</p>
+            <p><strong>Estilo de vida saudável e minimalista:</strong> Aprenda a simplificar sua rotina, cuidar do corpo e da mente, e viver com mais equilíbrio, saúde e propósito.</p>
+            <p><strong>Fitness e performance:</strong> Dicas e estratégias para melhorar seu condicionamento físico, aumentar energia e alcançar seus objetivos com mais força e disciplina.</p>
+            <p><strong>Longevidade e saúde preventiva:</strong> Dicas e hábitos para cuidar do seu corpo, prevenir doenças e viver com mais qualidade e vitalidade ao longo dos anos.</p>
+            <p><strong>Nutrição para públicos específicos:</strong> Conteúdos e dicas personalizadas para atender às necessidades nutricionais de diferentes pessoas, promovendo saúde e bem-estar de forma prática.</p>
+            <p><strong>Saúde mental e emocional:</strong> Dicas e práticas para cuidar da mente, equilibrar emoções e viver com mais bem-estar, clareza e tranquilidade no dia a dia.</p>
+            <p><strong>Saúde natural e terapias:</strong> Descubra métodos naturais e terapias que promovem equilíbrio, bem-estar e qualidade de vida de forma saudável e harmoniosa.</p>
+        </div>
